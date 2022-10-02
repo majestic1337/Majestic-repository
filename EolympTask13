@@ -1,0 +1,56 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int long sum, n,a=0;
+	cin >> sum;
+	if (sum >= 100)
+	{
+		a += sum / 100;
+		sum %= 100;
+	
+		if (sum == 0)
+		{
+			cout << a;
+			return 0;
+		}
+	}
+	if (sum >= 20)
+	{
+		a += sum / 20;
+		sum %= 20;
+
+		
+		if (sum == 0)
+		{
+			cout << a;
+			return 0;
+		}
+	}
+	if (sum >= 10)
+	{
+		a += sum / 10;
+		sum %= 10;
+		if (sum == 0)
+		{
+			cout << a;
+			return 0;
+		}
+	}
+	if (sum >= 5)
+	{
+		a += sum / 5;
+		sum %= 5;
+		if (sum == 0)
+		{
+			cout << a;
+			return 0;
+		}
+	}
+	if (sum >= 1)
+	{
+		a += sum;
+	}
+	cout << a;
+}
